@@ -1,0 +1,455 @@
+/*
+ * Thanks to 
+
+Template 2085 Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+for providing the basic format which has been edited by Pawan Goyal as par requied.
+*/
+
+body {
+	background: white;
+	font-family: Georgia, serif;
+	padding-bottom: 8px;
+  margin: 0;
+  font-size: 15px;
+}
+
+
+/*---------------------------------------
+    Typorgraphy              
+-----------------------------------------*/
+
+h1,h2,h3,h4,h5,h6,hn4 {
+  color: #527bbd;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	padding-top: 0.5em;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+h1 {
+    font-size: 62px;
+    padding-bottom: 14px;
+    margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h2,h3 {
+  padding-bottom: 6px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+hn4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p {
+	margin-top: 0.0em;
+	margin-bottom: 0.8em;
+	padding: 0;
+  line-height: 1.3;
+  font-size: 15px;
+}
+
+b {
+	margin-top: 0.0em;
+	margin-bottom: 0.8em;
+	padding: 0;
+  line-height: 1.3;
+  font-size: 15px;
+}
+.btn-success:focus {
+  background-color: #000;
+  border-color: transparent;
+}
+
+
+/*---------------------------------------
+    General               
+-----------------------------------------*/
+
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #80a0b0;
+}
+
+a, a > tt {
+	color: #224b8d;
+	text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.7 );
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  overflow: hidden;
+}
+
+
+/*---------------------------------------
+    Preloader section              
+-----------------------------------------*/
+
+
+
+/*---------------------------------------
+    Main Navigation             
+-----------------------------------------*/
+
+.navbar-default {
+  color: #0bddbe;
+    margin: 0 !important;
+    padding: 18px 0;
+}
+
+.navbar-default .navbar-brand {
+  color: #527bbd;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  /*text-transform: uppercase;*/
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #527bbd;
+    font-size: 16px;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+.navbar-default .navbar-nav > li a:hover {
+  color: #527bbd !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #606066;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav li a:hover,
+ .navbar-default .navbar-nav .active > a {
+  color: #022b6d;
+  }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color:rgb(147, 39, 15);
+      background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+     border: none;
+     padding-top: 10px;
+  }
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #bfba55;
+    border-color: transparent;
+  }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { 
+  background-color: transparent;
+}
+
+
+
+/*---------------------------------------
+    Home section              
+-----------------------------------------*/
+
+#home {
+    background-size: cover;
+    background-position: center center;
+    color: #Blue;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+     align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#home h4 {
+  color: #bfba55;
+}
+
+#home .btn {
+  background: #blue;
+  border: 2px solid #blue;
+  border-radius: 100px;
+  color: #444;
+  font-family: 'Merriweather', serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 22px;
+  margin-top: 42px;
+  transition: all 0.4s ease-in-out;
+}
+
+#home .btn:hover {
+  background: transparent;
+  border-color: #blue;
+  color: #blue;
+}
+
+
+
+
+
+
+/* Back top */
+.go-top {
+  background-color: #blue;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  transition : all 1s ease;
+  bottom: 2em;
+  right: 2em;
+  color: #333;
+  font-size: 24px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.go-top:hover {
+    background: #bfba55;
+    color: #blue;
+}
+
+
+
+
+
+
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.avatarExper {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+}
+
+.avatar_header {
+  vertical-align: right;
+  width: 400px;
+  height: 100px;
+}
+
+.topright {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 125px;
+  width: 125px;
+  background: url('../images/MPI_front.jpg') no-repeat;
+  text-indent: -999em;
+  text-decoration: none;
+}
+
+.sidebar-box {
+  max-height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+.sidebar-box .read-more { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+  width: 100%; 
+  text-align: right; 
+  margin: 0; padding: 30px 0; 
+	
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+}
+
+/*****************/
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+:target:before {
+  content:"";
+  display:block;
+  height:90px; /* fixed header height*/
+  margin:-90px 0 0; /* negative fixed header height */
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto }
+
+  h2::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -285px; 
+    height: 285px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+  h3 span { 
+    margin-top: -350px;        /* Size of fixed header */
+    padding-bottom: 300px; 
+    display: block; 
+  }
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;}
+  li{
+    text-indent: -20px;
+    padding-left: 25px;
+}
+
+hr {
+    -moz-box-sizing: border-box;
+    -moz-float-edge: margin-box;
+    border: 1px inset;
+    color: gray;
+    display: block;
+    height: 1px;
+    margin-top:-10px; 
+    margin-bottom:2px;
+}
+
+figure {
+  position: bottom;
+  margin: 0;
+  padding: 10px;
+  width: 370px;
+}
+
+figcaption {
+  padding: 10px;
+  text-align: left;
+  position: bottom;
+}
+
+div#footer {
+	font-size: small;
+	border-top: 1px solid #c0c0c0;
+	padding-top: 0.1em;
+	margin-top: 4.0em;
+	color: #c0c0c0;
+}
+
+div#footer a {
+	color: #80a0b0;
+}
+
+div#footer-text {
+	float: left;
+	padding-bottom: 8px;
+}
