@@ -21,7 +21,7 @@ body {
     Typorgraphy              
 -----------------------------------------*/
 
-h1,h2,h3,h4,h5,h6,hn4 {
+h1,h2,h3,h4,h5,h6{
   color: #527bbd;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
@@ -50,7 +50,12 @@ h3 {
 }
 
 hn4 {
-  font-weight: bold;
+  color: #072d01f5;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+  padding-top: 0.5em;
   font-size: 20px;
 }
 
