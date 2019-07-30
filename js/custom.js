@@ -36,3 +36,21 @@
       $('html, body').animate({scrollTop: 0}, 300);
       })
 
+/*
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block"){
+    x.style.display = "none"
+  } else {
+    x.style.display = "block"
+  }
+}
+*/
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "block"){
+    x.style.display = "none"
+  } else {
+    x.style.display = "block"
+  }
+}
