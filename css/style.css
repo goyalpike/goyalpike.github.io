@@ -626,7 +626,7 @@ div#footer-text {
 
 .displaynone {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 10px;
   background-color: lightblue;
   margin-top: 20px;
   display: none;
