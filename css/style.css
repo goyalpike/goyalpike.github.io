@@ -660,3 +660,28 @@ div#footer-text {
 
 .button:hover {background-color: lightblue}
 
+.table-striped tbody tr:first-child td { 
+  background: red; 
+}
+
+/*Responsive table*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  background: #D1F2EB; 
+}
+
+td, th { 
+  padding: 8px; 
+  text-align: left; 
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #EBF5FB; 
+}
+
+th { 
+  background: #D1F2EB; 
+  font-weight: bold; 
+}
