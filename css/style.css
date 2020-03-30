@@ -21,7 +21,7 @@ body {
     Typorgraphy              
 -----------------------------------------*/
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,h7{
   color: #527bbd;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
@@ -29,6 +29,10 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 1.0;
 	padding-top: 0.5em;
 	border-bottom: 1px solid #aaaaaa;
+}
+
+h7{
+  color: #527bbd;
 }
 
 h1 {
@@ -185,7 +189,7 @@ margin: 0;
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #9b0300;
+  color: #009b00;
   background-color: transparent;
 }
 
@@ -362,25 +366,26 @@ background-color: transparent;
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
   opacity: 1;
   font-size: inherit;
-  max-height: 999em;
+  max-height: 20em;
 }
 
 .read-more-state ~ .read-more-trigger:before {
-  content: 'Show more';
+  content: 'Show more news';
 }
 
 .read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Show less';
+  content: 'Show only recent news';
 }
 
 .read-more-trigger {
   cursor: pointer;
   display: inline-block;
   padding: 0 .5em;
-  color: #666;
+  color: rgb(34, 17, 110);
   font-size: .9em;
   line-height: 2;
-  border: 1px solid #ddd;
+  border: 1px solid rgb(199, 46, 46);
+  background: #bfba55;
   border-radius: .25em;
 }
 
@@ -390,6 +395,12 @@ background-color: transparent;
   margin-right: auto;
   width: 100%;
   height: 100%;
+}
+
+.centerImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 IMG.displayed {
@@ -480,7 +491,7 @@ div#footer-text {
 
 .blog-post-image,
 .blog-post-video {
-  padding-top: 22px;
+  padding-top: 20px;
   padding-bottom: 22px;
   width: 100%;
   height: 30%
@@ -488,7 +499,7 @@ div#footer-text {
 
 #about img,
 .blog-post-image img {
-  border-radius: 1px;
+  border-radius: 0px;
 }
 
 .blog-post-title a {
@@ -684,4 +695,233 @@ tr:nth-of-type(odd) {
 th { 
   background: #D1F2EB; 
   font-weight: bold; 
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /*Full-height: remove this if you want "auto" height*/
+  width: 20%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 1; /* Stay at the top */
+  left: 1;
+  background-color: rgb(12, 11, 11); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 2px 8px 2px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fffefe;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ac3030;
+}
+
+.sidenav a:active {
+  color: #6448e0;
+}
+
+/* Style page content */
+.main {
+  margin-left: 25%; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  margin-right: 5%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 2px;}
+}
+
+a.active { background-color: rgb(223, 107, 13); }
+
+/* Style all font awesome icons */
+.ai, .fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+.fa-github {
+  background: #ff6600;
+  color: white;
+}
+.fa-envelope {
+  background: #08ebcd;
+  color: white;
+}
+
+.ai-google-scholar {
+  background: #3b7094;
+  color: white;
+}
+
+.ai-orcid{
+  background: #A6CE39;
+  color: white;
+}
+
+.split {
+  /* height: 100%; */
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
