@@ -740,7 +740,7 @@ th {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 10px;}
-  .main {margin-right: 5%;}
+  .main {margin-right: 0%;}
 }
 
 a.active { background-color: rgb(223, 107, 13); }
