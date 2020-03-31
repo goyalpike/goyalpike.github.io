@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/w3.css">
 
 </head>
 <body>
@@ -36,39 +37,37 @@
 </div>
 
 
-<div class="sidenav">
-     <p>
-     <a href="#"><img src="images/Goyal_small.png" class="img-circle centerImg" text-align: center> </a> 
-     <a href = "#" style="font-size:225%;" text-align: center>Pawan Goyal</a>
-     <a style="font-size:90%;" text-align: center>Computational and Data Scientist,   <br/> Strong Interest in Machine Learning</a> 
-     <a href = "https://www.mpi-magdeburg.mpg.de" target="_blank" style="font-size:90%;" text-align: center> Max Planck Institute, Magdeburg, Germany </a> 
-</p>
-     <br/><hr> <br/>
-
+<nav class="w3-sidenav w3-collapse w3-dark-grey w3-card-2 w3-animate-left" style="width:250px;">
+     <a href="javascript:void(0)" onclick="w3_close()" 
+     class="w3-closenav w3-large w3-hide-large">Close &times;</a>
+          <a href="#"><img width = 50% src="images/Goyal_small.png" class="img-circle centerImg" text-align: center> </a> 
+          <a href = "#" style="font-size:200%;" text-align: center>Pawan Goyal</a>
+          <a style="font-size:90%;" text-align: center>Computational and Data Scientist with Strong Interest in Machine Learning</a> 
+          <a href = "https://www.mpi-magdeburg.mpg.de" target="_blank" style="font-size:90%;" text-align: center> Max Planck Institute, Magdeburg, Germany <hr> </a> 
      <a href="index.html">Home</a>
      <a href="Goyal_CV.html">CV</a>
-     
      <a href="Research.html">Research</a>
-     <a href="Publications.html" class="active">Publications</a>
-     <a href="AwardsHonors.html">Awards & Honors</a>
-     <!-- <a href="AwardsHonors.html">Contact</a> -->
-     <br/>
-     <hr>
-
-
-     <br/><br/><br/><br/><br/><br/>
-     <a href = "mailto:goyalp@mpi-magdeburg.mpg.de"><i class="fa fa-envelope"></i> Email</a>
-     <a href = "https://www.linkedin.com/in/dr-pawan-goyal-51a66033/"><i class="fa fa-linkedin"> </i> LinkedIn</a>
-     <a><i class="fa fa-github"></i> GitHub</a>
-     <a href = "https://scholar.google.com/citations?user=9rEfaRwAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Google Scholar</a>
-     <a href = "https://scholar.google.com/citations?user=9rEfaRwAAAAJ&hl=en"><i class="ai ai-orcid"></i> ORCiD Profile</a>
+     <a href="Publications.html" class = "active">Publications</a>
+     <a href="AwardsHonors.html">Awards & Honors</a>	<hr>
+     <br/><br/>
      <br><br>
+     <footer class="">
+          <a href = "mailto:goyalp@mpi-magdeburg.mpg.de" target="_blank"><i class="fa fa-envelope"></i> Email</a>
+          <a href = "https://www.linkedin.com/in/dr-pawan-goyal-51a66033/" target="_blank"><i class="fa fa-linkedin"> </i> LinkedIn</a>
+          <a href = "https://github.com/goyalpike" target="_blank"><i class="fa fa-github" target="_blank"></i> GitHub</a>
+          <a href = "https://scholar.google.com/citations?user=9rEfaRwAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+          <a href = "https://orcid.org/0000-0003-3072-7780" target="_blank"><i class="ai ai-orcid"></i> ORCiD Profile</a>
+     </footer>
+</nav>
 
-</div>
+<div class="w3-main" style="margin-left:250px">
+  <header class="w3-container w3-teal">
+    <span class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</span>
+  </header>
 
-<div class="main">
-  <div class="row">
-          <h2 class="title">Publications</h2><hr>
+  <div class="w3-container">
+
+          <h2 class="title">Publications</h2>
           <p>If you have questions regarding the publications, please feel free to contact me. <a href = "https://scholar.google.de/citations?user=9rEfaRwAAAAJ&hl=en" target="_blank">Gooogle scholar page <img src="./images/GoogleScholarLogo.png" width = "40 "height="40"></a> </p>
           <ul >
             <li> <a href="#SubmittedArticles">Submitted Articles (6)</a> </li>
@@ -487,7 +486,14 @@
 <script src="js/jquery.parallax.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
-
+<script>
+  function w3_open() {
+      document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+  }
+  function w3_close() {
+      document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+  }
+</script>
 
 </body>
 </html>

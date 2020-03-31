@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/w3.css">
 
 </head>
 <body>
@@ -36,74 +37,59 @@
 </div>
 
 
-<div class="sidenav">
-     <p>
-     <a href="#"><img src="images/Goyal_small.png" class="img-circle centerImg" text-align: center> </a> 
-     <a href = "#" style="font-size:225%;" text-align: center>Pawan Goyal</a>
-     <a style="font-size:90%;" text-align: center>Computational and Data Scientist,   <br/> Strong Interest in Machine Learning</a> 
-     <a href = "https://www.mpi-magdeburg.mpg.de" target="_blank" style="font-size:90%;" text-align: center> Max Planck Institute, Magdeburg, Germany </a> 
-</p>
-     <br/><hr> <br/>
-
+<nav class="w3-sidenav w3-collapse w3-dark-grey w3-card-2 w3-animate-left" style="width:250px;">
+     <a href="javascript:void(0)" onclick="w3_close()" 
+     class="w3-closenav w3-large w3-hide-large">Close &times;</a>
+          <a href="#"><img width = 50% src="images/Goyal_small.png" class="img-circle centerImg" text-align: center> </a> 
+          <a href = "#" style="font-size:200%;" text-align: center>Pawan Goyal</a>
+          <a style="font-size:90%;" text-align: center>Computational and Data Scientist with Strong Interest in Machine Learning</a> 
+          <a href = "https://www.mpi-magdeburg.mpg.de" target="_blank" style="font-size:90%;" text-align: center> Max Planck Institute, Magdeburg, Germany <hr> </a> 
      <a href="index.html">Home</a>
      <a href="Goyal_CV.html">CV</a>
-     
-     <a href="Research.html" class="active" >Research</a>
+     <a href="Research.html" class = "active">Research</a>
      <a href="Publications.html">Publications</a>
-     <a href="AwardsHonors.html">Awards & Honors</a>
-     <!-- <a href="AwardsHonors.html">Contact</a> -->
-     <br/>
-     <hr>
-
-
-     <br/><br/><br/><br/><br/><br/>
-     <a href = "mailto:goyalp@mpi-magdeburg.mpg.de"><i class="fa fa-envelope"></i> Email</a>
-     <a href = "https://www.linkedin.com/in/dr-pawan-goyal-51a66033/"><i class="fa fa-linkedin"> </i> LinkedIn</a>
-     <a><i class="fa fa-github"></i> GitHub</a>
-     <a href = "https://scholar.google.com/citations?user=9rEfaRwAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Google Scholar</a>
-     <a href = "https://scholar.google.com/citations?user=9rEfaRwAAAAJ&hl=en"><i class="ai ai-orcid"></i> ORCiD Profile</a>
+     <a href="AwardsHonors.html">Awards & Honors</a>	<hr>
+     <br/><br/>
      <br><br>
+     <footer class="">
+          <a href = "mailto:goyalp@mpi-magdeburg.mpg.de" target="_blank"><i class="fa fa-envelope"></i> Email</a>
+          <a href = "https://www.linkedin.com/in/dr-pawan-goyal-51a66033/" target="_blank"><i class="fa fa-linkedin"> </i> LinkedIn</a>
+          <a href = "https://github.com/goyalpike" target="_blank"><i class="fa fa-github" target="_blank"></i> GitHub</a>
+          <a href = "https://scholar.google.com/citations?user=9rEfaRwAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+          <a href = "https://orcid.org/0000-0003-3072-7780" target="_blank"><i class="ai ai-orcid"></i> ORCiD Profile</a>
+     </footer>
+</nav>
 
-</div>
+<div class="w3-main" style="margin-left:250px">
+     <header class="w3-container w3-teal">
+       <span class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</span>
+     </header>
 
-<!-- Blog Section -->
-<div class="main">
-     <div class="row">
-          <div class="">
-               <div>
-                    <div class="">
-                         <h2>Research Interests</h2><hr>
-                         <div>
-                              <input type="checkbox" class="read-more-state" id="post-2" />
-                              <ul>
-                                   <li> Data-driven modeling and system identification</li>
-                                   <li> Low-order approximation of high-dimensional dynamical systems</li>
-                                   <li> Application of deep learning in dynamical systems </li>
-                                   <li> 3D image reconstruction and recovery</li>
-                              </ui>
-                         </div>                          
-                         <h2>Current Research Projects</h2>
-                         <h3>3D image reconstruction using SAXS measurements</h3>
-                         <img src="images/bigmaxLogo.png" height="100" width="150" alt="Image" style="float: left; margin: 4px 10px 0px 0px;">
-                                   <img src="images/saxs-fratzl.jpg" height="100" width="350" alt="Image" style="float: right; margin: 4px 10px 0px 0px;">  <p style="text-align:justify">Imaging tools such as X-ray spectroscopy or scattering play a vital role in gathering important material information for example structure, elasticity, porosity. We particularly focus on small angle X-ray scattering (SAXS) tomography, aiming at determining a complete 3D SAXS pattern for each pixel of the scanned plane. Typically, the number of SAXS frames to be taken for one tomographic reconstruction is in the order of more than one million. Considering that one SAXS frame has a size of several megabytes, the amount of data for one tomographic reconstruction is in the order of terabytes  <a href = "https://www.bigmax.mpg.de/32939/data-diagnostics"> [more details]</a>. <br/>
-                                   In this project, our main goal is to reduce the number of experiments since more experiments impose a huge economic burden. Furthermore, we aim at utilizing various image reconstruction techniques, combined with regularization and some additional information gathered at the experimental set-up. Thus, we can reconstruct an image, allowing us to extract important features about the material at the lower both economic and computation expenses.  <br/><br/> </p>
-                         <h3>Data-driven and reduced-order and  modeling</h3> <img src="images/MORlogo.jpeg" height="90" width="180" alt="Image" style="float: left; margin: 4px 10px 0px 0px;">
-                         <img src="./images/FHN_Simulations.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 0px;" frameborder="0"></img>
-                         <p style="text-align:justify">
-                         Mathematical modeling is one of the fundamental tools to study a dynamical system. In this discipline, my focus lies on a) data-driven modeling using either time-domain measurements or frequency-domain measurements, b) reduced-order modeling of large-scale dynamical systems. Due to ever increasing the complexity of the process, the resulting models are complex and large-scale. Hence, simpler reduced-order modeling is a key to build a computational cheaper and simple surrogate models for large-scale complex systems. I have significantly work on reduced-order modeling for nonlinear large-scale dynamical systems, inspired by system theory such as interpolation and balanced truncation. 
-                         <br/> 
-                         <img src="images/reactorModel1.jpg" height="90" width="180" style="float: left; margin: 4px 10px 0px 0px;">
-                         My immediate focus in this area is data-driven modeling, by utilizing tools from various different fields from sparse recovery and look at the data-driven modeling from a different perspective. Furthermore, I am particularly interested in the real-world application of reduced-order and data-driven modeling. To that end, we have successfully concluded an application of reduced-order modeling for nonlinear catalytic reactors and gained a significant speed-up in the simulations<a href = "https://www.mpi-magdeburg.mpg.de/3003014/MOR-for-Nonlinear-Model-Design-of-Catalytic-Reactors"> [more details]</a>. 
-                         </p>
-                    </div>
-                    <div class="col-md-12 col-sm-12"><br/><br/></div>
-               </div>
-          </div>
+     <div class="w3-container">
+          <h2>Research Interests</h2>
+               <ul>
+                    <li> Data-driven modeling and system identification</li>
+                    <li> Low-order approximation of high-dimensional dynamical systems</li>
+                    <li> Application of deep learning in dynamical systems </li>
+                    <li> 3D image reconstruction and recovery</li>
+               </ui>  
+     </div>
+     <div class = "w3-container">
+          <h2>Current Research Projects</h2>
+               <h3>3D image reconstruction using SAXS measurements</h3>
+               <img src="images/bigmaxLogo.png" height="100" width="150" alt="Image" style="float: left; margin: 4px 10px 0px 0px;">
+                         <img src="images/saxs-fratzl.jpg" height="100" width="350" alt="Image" style="float: right; margin: 4px 10px 0px 0px;">  <p style="text-align:justify">Imaging tools such as X-ray spectroscopy or scattering play a vital role in gathering important material information for example structure, elasticity, porosity. We particularly focus on small angle X-ray scattering (SAXS) tomography, aiming at determining a complete 3D SAXS pattern for each pixel of the scanned plane. Typically, the number of SAXS frames to be taken for one tomographic reconstruction is in the order of more than one million. Considering that one SAXS frame has a size of several megabytes, the amount of data for one tomographic reconstruction is in the order of terabytes  <a href = "https://www.bigmax.mpg.de/32939/data-diagnostics"> [more details]</a>. <br/>
+                         In this project, our main goal is to reduce the number of experiments since more experiments impose a huge economic burden. Furthermore, we aim at utilizing various image reconstruction techniques, combined with regularization and some additional information gathered at the experimental set-up. Thus, we can reconstruct an image, allowing us to extract important features about the material at the lower both economic and computation expenses.  <br/><br/> </p>
+               <h3>Data-driven and reduced-order and  modeling</h3> <img src="images/MORlogo.jpeg" height="90" width="180" alt="Image" style="float: left; margin: 4px 10px 0px 0px;">
+               <img src="./images/FHN_Simulations.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 0px;" frameborder="0"></img>
+               <p style="text-align:justify">
+               Mathematical modeling is one of the fundamental tools to study a dynamical system. In this discipline, my focus lies on a) data-driven modeling using either time-domain measurements or frequency-domain measurements, b) reduced-order modeling of large-scale dynamical systems. Due to ever increasing the complexity of the process, the resulting models are complex and large-scale. Hence, simpler reduced-order modeling is a key to build a computational cheaper and simple surrogate models for large-scale complex systems. I have significantly work on reduced-order modeling for nonlinear large-scale dynamical systems, inspired by system theory such as interpolation and balanced truncation. 
+               <br/> 
+               <img src="images/reactorModel1.jpg" height="90" width="180" style="float: left; margin: 4px 10px 0px 0px;">
+               My immediate focus in this area is data-driven modeling, by utilizing tools from various different fields from sparse recovery and look at the data-driven modeling from a different perspective. Furthermore, I am particularly interested in the real-world application of reduced-order and data-driven modeling. To that end, we have successfully concluded an application of reduced-order modeling for nonlinear catalytic reactors and gained a significant speed-up in the simulations<a href = "https://www.mpi-magdeburg.mpg.de/3003014/MOR-for-Nonlinear-Model-Design-of-Catalytic-Reactors"> [more details]</a>. 
+               </p>
      </div>
 </div>
-
-<!-- Footer Section -->
-
 <!-- Back top -->
 <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
 
@@ -116,11 +102,14 @@
 <script src="js/jquery.parallax.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
-<div id="footer" class = "main">
-     <div id="footer-text ">
-          Made by &copy;Pawan Goyal. Special thanks to <a href = "https://www.tooplate.com/view/2085-neuron">Neuron HTML template</a>.
-     </div>
-</div>
+<script>
+     function w3_open() {
+         document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+     }
+     function w3_close() {
+         document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+     }
+</script>
 
 </body>
 </html>
