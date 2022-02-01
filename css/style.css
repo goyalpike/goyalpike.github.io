@@ -10,9 +10,12 @@ for providing the basic format which has been edited by Pawan Goyal as par requi
 
 body {
 	background: white;
-	font-family: Georgia, serif;
-	padding-bottom: 8px;
-  margin: 0;
+  font-family: Georgia, serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin: 20;
   font-size: 15px;
 }
 
