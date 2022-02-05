@@ -66,29 +66,42 @@
      </header>
 
      <div class="w3-container">
-          <h6 style="background-color:tomato;">(Note: the page is under construction)</h6>
           <h2>Research Interests </h2>
                <ul>
-                    <li> Data-driven learning of dynamical process </li>
-                    <li> Dimensionality reduction and model-order reduction </li>
-                    <li> Fast image reconstruction in computed tomography using deep learning </li>
-                    <li> Algorithm development for image denoising and image completion problems</li>
+                    <li> Machine learning for dynamical systems </li>
+                    <li> Suitable embeddings for dynamical systems using deep learning </li>
+                    <li> Dimensionality reduction and (data-driven) reduced-order modeling </li>
+                    <li> Deep learning-assistant image reconstruction for computed tomography </li>
                </ui>  
      </div>
      <div class = "w3-container">
           <h2>Current Research Projects</h2>
-               <h3>3D image reconstruction using SAXS measurements</h3>
-               <img src="images/bigmaxLogo.png" height="100" width="150" alt="Image" style="float: left; margin: 4px 10px 0px 0px;">
-                         <img src="images/saxs-fratzl.jpg" height="100" width="350" alt="Image" style="float: right; margin: 4px 10px 0px 0px;">  <p style="text-align:justify">Imaging tools such as X-ray spectroscopy or scattering play a vital role in gathering important material information for example structure, elasticity, porosity. We particularly focus on small angle X-ray scattering (SAXS) tomography, aiming at determining a complete 3D SAXS pattern for each pixel of the scanned plane. Typically, the number of SAXS frames to be taken for one tomographic reconstruction is in the order of more than one million. Considering that one SAXS frame has a size of several megabytes, the amount of data for one tomographic reconstruction is in the order of terabytes  <a href = "https://www.bigmax.mpg.de/32939/data-diagnostics"> [more details]</a>. <br/>
-                         In this project, our main goal is to reduce the number of experiments since more experiments impose a huge economic burden. Furthermore, we aim at utilizing various image reconstruction techniques, combined with regularization and some additional information gathered at the experimental set-up. Thus, we can reconstruct an image, allowing us to extract important features about the material at the lower both economic and computation expenses.  <br/><br/> </p>
-               <h3>Data-driven and reduced-order and  modeling</h3> <img src="images/MORlogo.jpeg" height="90" width="180" alt="Image" style="float: left; margin: 4px 10px 0px 0px;">
-               <img src="./images/FHN_Simulations.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 0px;" frameborder="0"></img>
+               <!------------------------------------------------------------>
+               <h4> Physics-enhanced reduced-order modelling using data </h4>
+               <!-- <img src="images/MORlogo.jpeg" height="90" width="180" alt="Image" style="float: left; margin: 20px 10px 10px 10px;"> -->
+               <img src="./images/SWE.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
                <p style="text-align:justify">
-               Mathematical modeling is one of the fundamental tools to study a dynamical system. In this discipline, my focus lies on a) data-driven modeling using either time-domain measurements or frequency-domain measurements, b) reduced-order modeling of large-scale dynamical systems. Due to ever increasing the complexity of the process, the resulting models are complex and large-scale. Hence, simpler reduced-order modeling is a key to build a computational cheaper and simple surrogate models for large-scale complex systems. I have significantly work on reduced-order modeling for nonlinear large-scale dynamical systems, inspired by system theory such as interpolation and balanced truncation. 
-               <br/> 
-               <img src="images/reactorModel1.jpg" height="90" width="180" style="float: left; margin: 4px 10px 0px 0px;">
-               My immediate focus in this area is data-driven modeling, by utilizing tools from various different fields from sparse recovery and look at the data-driven modeling from a different perspective. Furthermore, I am particularly interested in the real-world application of reduced-order and data-driven modeling. To that end, we have successfully concluded an application of reduced-order modeling for nonlinear catalytic reactors and gained a significant speed-up in the simulations<a href = "https://www.mpi-magdeburg.mpg.de/3003014/MOR-for-Nonlinear-Model-Design-of-Catalytic-Reactors"> [more details]</a>. 
+                    Mathematical modeling is one of the fundamental tools to study a dynamical system. Due to the ever-increasing complexity of processes, the dynamical models are complex and high-dimensional, making engineering design such as control and optimization demanding. As a remedy, we make use of the observation that high-fidelity models often evolve in low-dimensional manifolds. Therefore, we seek to construct compact low-dimensional models of high-fidelity models using only data. Towards this, we have investigated the operator inference approach for general nonlinear parametric systems and have tailored it for incompressible flow by incorporpating physics. The approach is quite appealing from an industrial viewpoint. It does not require modeling of high-fidelity models but rather needs only data obtained via a legacy code or simulation software. We continue to make the approach much richer in our future research in this direction. 
                </p>
+               <!------------------------------------------------------------>
+               <h4> Learning dynamical systems using  measurements </h4>
+               <img src="./images/pendulum_vectorfield.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
+               <p style="text-align:justify">
+                    Learning Dynamical systems from data is essential to perform engineering studies. It becomes even more critical for robotic design and climate modeling applications where first-principle knowledge is not sufficiently available. For this, we seek to learn dynamical models whose dynamics can be explained by neural networks. We particularly strive to treat noisy and sparsely-sampled measurements for robust learning of dynamical models. Moreover, in numerous applications, dynamical data are high-dimensional and exhibit complex dynamics; thus, learning models directly with such data are cumbersome and make the engineering design process infeasible. Therefore, we focus on identifying suitable embeddings of data such that the dynamics of the embeddings can be expressed by simple models to perform engineering studies. For this, we leverage the powerful expressive capabilities of deep learning.
+               </p>
+               <!------------------------------------------------------------>
+               <h4> Discovery of interpretable dynamical models from measurements</h4>
+               <img src="./images/Hopf_training.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
+               <p style="text-align:justify">
+                    For more insight into the dynamical behavior, it is important to discover the underlying governing equations that experts can then interpret and explain. This often also yields models that are generalizable and interpretable. Towards this, we focus on the dictionary-based discovery of dynamical systems. The main principle is to construct a high-dimensional dictionary containing nonlinear candidate features and then select a few features to explain the dynamics. Since measurements can be noisy and sparse, we intend to use deep learning to facilitate the discovery of governing equations. Moreover, we work with experimental data in material science (phase-transformation) to infer and discover governing equations for phase-field modeling. 
+               </p>
+               <!------------------------------------------------------------>
+               <h4> Image reconstruction for computed tomography  </h4>
+               <img src="./images/ct.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
+               <p style="text-align:justify">
+                    Construction of medical images from computed tomography (CT) is a crucial diagnostic tool. Classical methods for CT image reconstructions are computationally expensive and sensitive to noise. To overcome, we employ deep learning-based methods to construct a model to reconstruct images that allow us to reconstruct images in milliseconds on query after training. In this direction, we look at combining various sources of information and concepts of deep learning for efficient training deep learning models. Moreover, we seek to construct deep learning models for image reconstruction that incorporate different resolution images directly without resizing them to a standard resolution.
+               </p>
+               <!------------------------------------------------------------>
      </div>
 </div>
 <!-- Back top -->
