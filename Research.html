@@ -1,130 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<title>Pawan Goyal</title>
-
-<link rel="icon" 
-      type="image/jpg" 
-      href="./images/mpi-waves.png">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-
-<!-- Main css -->
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/w3.css">
-
-</head>
-<body>
-
-<!-- PRE LOADER -->
-
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-wordpress">
-          <span class="sk-inner-circle"></span>
-     </div>
-</div>
-
-
-<nav class="w3-sidenav w3-collapse w3-dark-grey w3-card-2 w3-animate-left" style="width:250px;">
-     <a href="javascript:void(0)" onclick="w3_close()" 
-     class="w3-closenav w3-large w3-hide-large">Close &times;</a>
-          <a href="#"><img width = 50% src="images/Goyal_small.png" class="img-circle centerImg" text-align: center> </a> 
-          <a href = "index.html" style="font-size:200%;" text-align: center>Pawan Goyal</a>
-          <a style="font-size:90%;" text-align: center>Team Leader </a> 
-          <a style="font-size:90%;" text-align: center>Physics-Enhanced Machine Learning</a> 
-          <a href = "https://www.mpi-magdeburg.mpg.de" target="_blank" style="font-size:90%;" text-align: center> Max Planck Institute, Germany <hr> </a> 
-     <a href="index.html">Home</a>
-     <a href="Goyal_CV.html">CV</a>
-     <a href="Research.html" class = "active">Research</a>
-     <a href="Publications.html">Publications</a>
-     <a href="AwardsHonors.html">Awards & Honors</a>	<hr>
-     <br/><br/>
-     <footer class="">
-          <a href = "mailto:goyalp@mpi-magdeburg.mpg.de" target="_blank"><i class="fa fa-envelope"></i> Email</a>
-          <a href = "https://www.linkedin.com/in/dr-pawan-goyal-51a66033/" target="_blank"><i class="fa fa-linkedin"> </i> LinkedIn</a>
-          <a href = "https://github.com/goyalpike" target="_blank"><i class="fa fa-github" target="_blank"></i> GitHub</a>
-          <a href = "https://scholar.google.com/citations?user=9rEfaRwAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
-          <a href = "https://orcid.org/0000-0003-3072-7780" target="_blank"><i class="ai ai-orcid"></i> ORCiD Profile</a>
-     </footer>
-</nav>
-
-<div class="w3-main" style="margin-left:250px">
-     <header class="w3-container w3-teal">
-       <span class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</span>
-     </header>
-
-     <div class="w3-container">
-          <h2>Research Interests </h2>
-               <ul>
-                    <li> Physics-informed neural network artchitecture designs </li>
-                    <li> Machine learning for time-series</li>
-                    <li> Surrogate and reduced-order modeling for physical processes </li>
-                    <li> Discovery of governing equations for interpretability </li>
-               </ui>  
-     </div>
-     <div class = "w3-container">
-          <h2>Current Main Research Projects</h2>
-               <!------------------------------------------------------------>
-               <h4> Physics-enhanced reduced-order modelling and inference </h4>
-               <!-- <img src="images/MORlogo.jpeg" height="90" width="180" alt="Image" style="float: left; margin: 20px 10px 10px 10px;"> -->
-               <img src="./images/SWE.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
-               <p style="text-align:justify">
-                    Mathematical modeling is one of the fundamental tools to study a dynamical system. Due to the ever-increasing complexity of processes, the dynamical models are complex and high-dimensional, making engineering designs such as control and optimization demanding. As a remedy, we make use of the observation that high-fidelity models often evolve in low-dimensional manifolds. Therefore, we seek to construct compact low-dimensional models of high-fidelity models using only data. Towards this, we have investigated the operator inference approach for general nonlinear parametric systems and have tailored it by incorporating physics, such as mass conversation. The approach is quite appealing from an industrial viewpoint. It does not require high-fidelity modeling explicitly but only needs data obtained via legacy code or simulation software. We continue to make the approach much richer in our future research in this direction. For complex transport-dominant problems, we utilize neural-network-based auto-encoders to identify low-dimensional representations, and so are dynamics. Recently, we can incorporate Hamiltonian knowledge into learning low-dimensional representations, ensuring the conversation of energy. 
-               </p>
-               <!------------------------------------------------------------>
-               <h4> Physics-infomed Neural ODEs </h4>
-               <img src="./images/pendulum_vectorfield.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
-               <p style="text-align:justify">
-                    Learning Dynamical systems from data is essential to perform engineering studies. It becomes even more critical for robotic design and climate modeling applications where first-principle knowledge is not sufficiently available. For this, we seek to learn dynamical models whose dynamics can be explained by Neural ODEs. We particularly strive to treat noisy and sparsely-sampled measurements for robust learning of dynamical models. 
-                    Prior physics or empirical hypothesis can be embeded to Neural ODEs, so they can obey these key physical properties. Our main focus is on stability and energy-based Neural ODEs which has wide applications particularly in robotics and computational flow dynamics. 
-               </p>
-               <!------------------------------------------------------------>
-               <h4> Discovery of interpretable dynamical models from measurements</h4>
-               <img src="./images/Hopf_training.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
-               <p style="text-align:justify">
-                    To have more insight into a dynamical process, it is important to discover the underlying governing equations--describing dynamics--that experts can then interpret and explain. This often also yields models that are generalizable and interpretable. Towards this, we focus on the dictionary-based discovery of dynamical systems. The main principle is to construct a high-dimensional dictionary containing nonlinear candidate features and then select a few features to explain the dynamics. Since measurements can be noisy and sparse, we blend sparse regression with deep learning to facilitate the discovery of governing equations. Moreover, we work with experimental data in material science (phase-transformation) to infer and discover governing equations for phase-field modeling. 
-               </p>
-               <!-- ----------------------------------------------------------
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="author" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Pawan Goyal</title>
+      <link rel="icon" 
+         type="image/jpg" 
+         href="./images/mpi-waves.png">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- Main css -->
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/w3.css">
+   </head>
+   <body>
+      <!-- PRE LOADER -->
+      <div class="preloader">
+         <div class="sk-spinner sk-spinner-wordpress">
+            <span class="sk-inner-circle"></span>
+         </div>
+      </div>
+      <nav class="w3-sidenav w3-collapse w3-dark-grey w3-card-2 w3-animate-left" style="width:250px;">
+         <a href="javascript:void(0)" onclick="w3_close()" 
+            class="w3-closenav w3-large w3-hide-large">Close &times;</a>
+         <a href="#"><img width = 50% src="images/Goyal_small.png" class="img-circle centerImg" text-align: center> </a> 
+         <a href = "index.html" style="font-size:200%;" text-align: center>Dr. Pawan Goyal</a>
+         <a style="font-size:90%;" text-align: center>Senior AI Engineer/Researcher </a> 
+         <!-- <a style="font-size:90%;" text-align: center>Physics-Enhanced Machine Learning</a>  -->
+         <a href = "https://www.appliedai.de/en/" target="_blank" style="font-size:90%;" text-align: center>
+            appliedAI Initative GmbH 
+            <hr>
+         </a>
+         <a href="index.html">Home</a>
+         <a href="Goyal_CV.html">CV</a>
+         <a href="Research.html" class = "active">Research</a>
+         <a href="Publications.html">Publications</a>
+         <a href="AwardsHonors.html">Awards & Honors</a>	
+         <hr>
+         <br/><br/>
+         <footer class="">
+            <a href = "mailto:goyalp@mpi-magdeburg.mpg.de" target="_blank"><i class="fa fa-envelope"></i> Email</a>
+            <a href = "https://www.linkedin.com/in/dr-pawan-goyal-51a66033/" target="_blank"><i class="fa fa-linkedin"> </i> LinkedIn</a>
+            <a href = "https://github.com/goyalpike" target="_blank"><i class="fa fa-github" target="_blank"></i> GitHub</a>
+            <a href = "https://scholar.google.com/citations?user=9rEfaRwAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+            <a href = "https://orcid.org/0000-0003-3072-7780" target="_blank"><i class="ai ai-orcid"></i> ORCiD Profile</a>
+         </footer>
+      </nav>
+      <div class="w3-main" style="margin-left:250px">
+         <header class="w3-container w3-teal">
+            <span class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</span>
+         </header>
+         <div class="w3-container">
+            <h2>Research Interests </h2>
+            <ul>
+            <li> Physics-informed neural network artchitecture designs </li>
+            <li> Machine learning for time-series</li>
+            <li> Surrogate and reduced-order modeling for physical processes </li>
+            <li> Discovery of governing equations for interpretability </li>
+            </ui>  
+         </div>
+         <div class = "w3-container">
+            <h2>Current Main Research Projects</h2>
+            <!------------------------------------------------------------>
+            <h4> Physics-enhanced reduced-order modelling and inference </h4>
+            <!-- <img src="images/MORlogo.jpeg" height="90" width="180" alt="Image" style="float: left; margin: 20px 10px 10px 10px;"> -->
+            <img src="./images/SWE.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
+            <p style="text-align:justify">
+               Mathematical modeling is one of the fundamental tools to study a dynamical system. Due to the ever-increasing complexity of processes, the dynamical models are complex and high-dimensional, making engineering designs such as control and optimization demanding. As a remedy, we make use of the observation that high-fidelity models often evolve in low-dimensional manifolds. Therefore, we seek to construct compact low-dimensional models of high-fidelity models using only data. Towards this, we have investigated the operator inference approach for general nonlinear parametric systems and have tailored it by incorporating physics, such as mass conversation. The approach is quite appealing from an industrial viewpoint. It does not require high-fidelity modeling explicitly but only needs data obtained via legacy code or simulation software. We continue to make the approach much richer in our future research in this direction. For complex transport-dominant problems, we utilize neural-network-based auto-encoders to identify low-dimensional representations, and so are dynamics. Recently, we can incorporate Hamiltonian knowledge into learning low-dimensional representations, ensuring the conversation of energy. 
+            </p>
+            <!------------------------------------------------------------>
+            <h4> Physics-infomed Neural ODEs </h4>
+            <img src="./images/pendulum_vectorfield.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
+            <p style="text-align:justify">
+               Learning Dynamical systems from data is essential to perform engineering studies. It becomes even more critical for robotic design and climate modeling applications where first-principle knowledge is not sufficiently available. For this, we seek to learn dynamical models whose dynamics can be explained by Neural ODEs. We particularly strive to treat noisy and sparsely-sampled measurements for robust learning of dynamical models. 
+               Prior physics or empirical hypothesis can be embeded to Neural ODEs, so they can obey these key physical properties. Our main focus is on stability and energy-based Neural ODEs which has wide applications particularly in robotics and computational flow dynamics. 
+            </p>
+            <!------------------------------------------------------------>
+            <h4> Discovery of interpretable dynamical models from measurements</h4>
+            <img src="./images/Hopf_training.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
+            <p style="text-align:justify">
+               To have more insight into a dynamical process, it is important to discover the underlying governing equations--describing dynamics--that experts can then interpret and explain. This often also yields models that are generalizable and interpretable. Towards this, we focus on the dictionary-based discovery of dynamical systems. The main principle is to construct a high-dimensional dictionary containing nonlinear candidate features and then select a few features to explain the dynamics. Since measurements can be noisy and sparse, we blend sparse regression with deep learning to facilitate the discovery of governing equations. Moreover, we work with experimental data in material science (phase-transformation) to infer and discover governing equations for phase-field modeling. 
+            </p>
+            <!-- ----------------------------------------------------------
                <h4> Image reconstruction for computed tomography  </h4>
                <img src="./images/ct.png" height="120" width="180" alt="Image" style="float: right; margin: 4px 10px 0px 15px;" frameborder="0"></img>
                <p style="text-align:justify">
                     Construction of medical images from computed tomography (CT) is a crucial diagnostic tool. Classical methods for CT image reconstructions are computationally expensive and sensitive to noise. To overcome, we employ deep learning-based methods to construct a model to reconstruct images that allow us to reconstruct images in milliseconds on query after training. In this direction, we look at combining various sources of information and concepts of deep learning for efficient training deep learning models. Moreover, we seek to construct deep learning models for image reconstruction that incorporate different resolution images directly without resizing them to a standard resolution.
                </p>
                ------------------------------------------------------- -->
-     </div>
-</div>
-<!-- Back top -->
-<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
-
-<!-- SCRIPTS -->
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/particles.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/custom.js"></script>
-<script>
-     function w3_open() {
-         document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
-     }
-     function w3_close() {
-         document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
-     }
-</script>
-
-</body>
+         </div>
+      </div>
+      <!-- Back top -->
+      <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+      <!-- SCRIPTS -->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/particles.min.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/jquery.parallax.js"></script>
+      <script src="js/smoothscroll.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         function w3_open() {
+             document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+         }
+         function w3_close() {
+             document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+         }
+      </script>
+   </body>
 </html>
