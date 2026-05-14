@@ -457,6 +457,71 @@ figcaption {
   position: bottom;
 }
 
+/* Skills tags */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 16px 0;
+  padding-left: 0;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: #eef2f8;
+  color: #527bbd;
+  border: 1px solid #c5d3e8;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-family: Georgia, serif;
+  white-space: nowrap;
+}
+
+/* CTA buttons */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0 10px 0;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 22px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Georgia, serif;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cta-btn-primary {
+  background: #527bbd;
+  color: #ffffff;
+  border: 2px solid #527bbd;
+}
+
+.cta-btn-primary:hover {
+  background: #3d5e96;
+  border-color: #3d5e96;
+  color: #ffffff;
+}
+
+.cta-btn-secondary {
+  background: #ffffff;
+  color: #527bbd;
+  border: 2px solid #527bbd;
+}
+
+.cta-btn-secondary:hover {
+  background: #eef2f8;
+  color: #3d5e96;
+}
+
 div#footer {
 	font-size: small;
 	border-top: 1px solid #c0c0c0;

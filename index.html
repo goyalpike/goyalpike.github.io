@@ -43,6 +43,12 @@
             <p style="text-align:justify">
                Previously, I led the <strong>Physics-Enhanced Machine Learning</strong> team at the <a href="https://www.mpi-magdeburg.mpg.de" target="_blank">Max Planck Institute for Dynamics of Complex Technical Systems</a> (MPI-DCTS), Magdeburg, Germany. I earned my Ph.D. in computational mathematics from MPI-DCTS and Otto von Guericke University in 2018, where I developed system-theoretic methods for constructing low-dimensional models of high-dimensional dynamical systems. My PhD work was recognized with the <strong>best thesis award</strong> from the Faculty of Mathematics at Otto von Guericke University and the <strong>Dr. Klaus Körper prize</strong> from GAMM for outstanding contributions to Applied Mathematics and Mechanics.
             </p>
+            <div class="cta-row">
+               <button onclick="openModal()" class="cta-btn cta-btn-primary" style="border:none; cursor:pointer;">
+                  <i class="fa fa-envelope"></i> Get in Touch
+               </button>
+            </div>
+            <div style="clear:both;"></div>
          </div>
          <div class="w3-container" style="float:left; width:100%;">
             <h3>Research Interests</h3>
@@ -53,10 +59,14 @@
             </ul>
          </div>
          <div class="w3-container" style="float:left; width:100%;">
-            <h3>Contact Details</h3>
-            <i class="fa fa-envelope"></i> <a href = "mailto:pkgpawan@gmail.com" target="_blank">pkgpawan(at)gmail(dot)com</a>
-            <br> <i class="fa fa-linkedin"></i> <a href= "https://www.linkedin.com/in/dr-pawan-goyal-51a66033/" target="_blank">Linkedin profile</a> <br/>
-            <a href = "https://orcid.org/0000-0003-3072-7780" target="_blank"><i class="ai ai-orcid"></i> ORCiD Profile</a>
+            <h3>Contact</h3>
+            <p>
+               <i class="fa fa-envelope"></i> pkgpawan@gmail.com
+               <button onclick="copyEmail(this)" title="Copy email address" style="background:none; border:none; cursor:pointer; color:#527bbd; padding:0 4px; vertical-align:middle;">
+                  <i class="fa fa-clipboard"></i>
+               </button>
+               <span class="copy-feedback" style="font-size:12px; color:#527bbd; display:none;">Copied!</span>
+            </p>
          </div>
          <!-- <div class="w3-container" style="float:left; width:100%;">
             <h3 class="title">Latest News</h3>
@@ -92,6 +102,34 @@
             
             </div> -->
       </div>
+      <!-- Contact Modal -->
+      <div id="contact-modal" onclick="closeModalOnOverlay(event)" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000; align-items:center; justify-content:center;">
+         <div style="background:#fff; border-radius:6px; padding:32px; max-width:460px; width:90%; position:relative; top:50%; transform:translateY(-50%); margin:auto;">
+            <button onclick="closeModal()" style="position:absolute; top:10px; right:14px; background:none; border:none; font-size:22px; cursor:pointer; color:#888; line-height:1;">&times;</button>
+            <h3 style="margin-top:0; padding-top:0; border-bottom:none;">Get in Touch</h3>
+            <form id="contact-form" onsubmit="submitForm(event)">
+               <div style="margin-bottom:10px;">
+                  <input type="text" name="name" placeholder="Your name" required
+                     style="width:100%; padding:9px 12px; border:1px solid #c5d3e8; border-radius:4px; font-family:Georgia,serif; font-size:14px; box-sizing:border-box;">
+               </div>
+               <div style="margin-bottom:10px;">
+                  <input type="email" name="email" placeholder="Your email" required
+                     style="width:100%; padding:9px 12px; border:1px solid #c5d3e8; border-radius:4px; font-family:Georgia,serif; font-size:14px; box-sizing:border-box;">
+               </div>
+               <div style="margin-bottom:14px;">
+                  <textarea name="message" placeholder="Your message" required rows="4"
+                     style="width:100%; padding:9px 12px; border:1px solid #c5d3e8; border-radius:4px; font-family:Georgia,serif; font-size:14px; box-sizing:border-box; resize:vertical;"></textarea>
+               </div>
+               <button type="submit" id="submit-btn" class="cta-btn cta-btn-primary" style="border:none; cursor:pointer; width:100%; justify-content:center;">
+                  <i class="fa fa-paper-plane"></i> Send Message
+               </button>
+               <p id="form-success" style="display:none; color:#527bbd; margin-top:12px; text-align:center;">
+                  Thank you! Your message has been sent.
+               </p>
+            </form>
+         </div>
+      </div>
+
       <!-- Footer Section -->
       <!-- Back top -->
       <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
@@ -110,6 +148,58 @@
          }
          function w3_close() {
              document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+         }
+         function openModal() {
+             var modal = document.getElementById("contact-modal");
+             modal.style.display = "flex";
+             document.body.style.overflow = "hidden";
+             document.getElementById("form-success").style.display = "none";
+             var btn = document.getElementById("submit-btn");
+             btn.style.display = "";
+             btn.disabled = false;
+             btn.innerHTML = '<i class="fa fa-paper-plane"></i> Send Message';
+         }
+         function closeModal() {
+             var modal = document.getElementById("contact-modal");
+             modal.style.display = "none";
+             document.body.style.overflow = "";
+         }
+         function closeModalOnOverlay(event) {
+             if (event.target === document.getElementById("contact-modal")) closeModal();
+         }
+         function submitForm(event) {
+             event.preventDefault();
+             var form = document.getElementById("contact-form");
+             var btn = document.getElementById("submit-btn");
+             btn.disabled = true;
+             btn.innerHTML = "Sending...";
+             fetch("https://formspree.io/f/mzdoqyaa", {
+                 method: "POST",
+                 body: new FormData(form),
+                 headers: { "Accept": "application/json" }
+             }).then(function(response) {
+                 if (response.ok) {
+                     form.reset();
+                     document.getElementById("form-success").style.display = "block";
+                     btn.style.display = "none";
+                     setTimeout(closeModal, 3000);
+                 } else {
+                     btn.disabled = false;
+                     btn.innerHTML = '<i class="fa fa-paper-plane"></i> Send Message';
+                     alert("Something went wrong. Please try again.");
+                 }
+             }).catch(function() {
+                 btn.disabled = false;
+                 btn.innerHTML = '<i class="fa fa-paper-plane"></i> Send Message';
+                 alert("Something went wrong. Please try again.");
+             });
+         }
+         function copyEmail(btn) {
+             navigator.clipboard.writeText("pkgpawan@gmail.com").then(function() {
+                 var feedback = btn.nextElementSibling;
+                 feedback.style.display = "inline";
+                 setTimeout(function() { feedback.style.display = "none"; }, 2000);
+             });
          }
       </script>
    </body>
